@@ -1,0 +1,41 @@
+# Local caches and credentials
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+*.netrc
+*.log
+*.swp
+*.swo
+
+# Generated tool caches
+/nlsa/3rd_party/export_fig/.ignore/
+
+# NOAA inputs are downloaded by each user, not distributed in this repository.
+/SRC/enso_ERSSTv5_2026/CLIMATE_DATA/
+*.nc.gz
+*.part
+
+# Regenerable Python results and figures
+*.npy
+*.npz
+*.pickle
+*.gif
+*.mp4
+*.eps
+**/SRC_py/figure*/
+**/SRC_py/Interim_*/
+**/figs/
+
+# MATLAB intermediates are regenerated locally; only exported results are versioned.
+/SRC/enso_ERSSTv5_2026/data/
+*.mat
+!SRC/enso_ERSSTv5_2026/myFolder/*.mat
+
+# Optional external MATLAB mapping package
+nlsa/3rd_party/m_map/
+
+# Generated paper figures
+/SRC/figure/
+/SRC/plotting/.paper-figure-stage-*/
